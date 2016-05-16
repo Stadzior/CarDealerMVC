@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mappedClasses.DicstatesEntity" table="dicstates" schema="" catalog="usedcarsdealer">
+        <id name="idState" column="IdState"/>
+        <property name="nameState" column="NameState"/>
+        <set name="carsesByIdState" inverse="true">
+            <key>
+                <column name="IdState"/>
+            </key>
+            <one-to-many not-found="ignore" class="mappedClasses.CarsEntity"/>
+        </set>
+        <set name="offersesByIdState" inverse="true">
+            <key>
+                <column name="IdState"/>
+            </key>
+            <one-to-many not-found="ignore" class="mappedClasses.OffersEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

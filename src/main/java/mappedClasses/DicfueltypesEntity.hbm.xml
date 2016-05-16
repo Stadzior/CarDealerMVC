@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mappedClasses.DicfueltypesEntity" table="dicfueltypes" schema="" catalog="usedcarsdealer">
+        <id name="idFuelType" column="IdFuelType"/>
+        <property name="nameFuelType" column="NameFuelType"/>
+        <set name="enginesesByIdFuelType" inverse="true">
+            <key>
+                <column name="IdFuelType"/>
+            </key>
+            <one-to-many not-found="ignore" class="mappedClasses.EnginesEntity"/>
+        </set>
+        <set name="logbooksesByIdFuelType" inverse="true">
+            <key>
+                <column name="IdFuelType"/>
+            </key>
+            <one-to-many not-found="ignore" class="mappedClasses.LogbooksEntity"/>
+        </set>
+        <set name="offersesByIdFuelType" inverse="true">
+            <key>
+                <column name="IdFuelType"/>
+            </key>
+            <one-to-many not-found="ignore" class="mappedClasses.OffersEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

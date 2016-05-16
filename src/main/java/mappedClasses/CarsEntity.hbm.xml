@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="mappedClasses.CarsEntity" table="cars" schema="" catalog="usedcarsdealer">
+        <id name="idCar" column="IdCar"/>
+        <property name="idLogbook" column="IdLogbook"/>
+        <property name="idState" column="IdState"/>
+        <property name="distanceDriven" column="DistanceDriven"/>
+        <property name="listOfComponents" column="ListOfComponents"/>
+        <property name="dateOfInsuranceExpiration" column="DateOfInsuranceExpiration"/>
+        <property name="price" column="Price"/>
+        <property name="idDriveType" column="IdDriveType"/>
+        <property name="description" column="Description"/>
+        <many-to-one name="dicdrivetypesByIdDriveType" class="mappedClasses.DicdrivetypesEntity">
+            <column name="IdDriveType"/>
+        </many-to-one>
+        <many-to-one name="logbooksByIdLogbook" class="mappedClasses.LogbooksEntity">
+            <column name="IdLogbook" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="dicstatesByIdState" class="mappedClasses.DicstatesEntity">
+            <column name="IdState"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
