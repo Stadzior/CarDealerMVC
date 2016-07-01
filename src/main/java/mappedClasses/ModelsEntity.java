@@ -24,16 +24,16 @@ public class ModelsEntity {
     public void setIdModel(int idModel) {
         this.idModel = idModel;
     }
-
-    @Basic
-    @Column(name = "IdBrand")
-    public Integer getIdBrand() {
-        return idBrand;
-    }
-
-    public void setIdBrand(Integer idBrand) {
-        this.idBrand = idBrand;
-    }
+//
+//    @Basic
+//    @Column(name = "IdBrand")
+//    public Integer getIdBrand() {
+//        return idBrand;
+//    }
+//
+//    public void setIdBrand(Integer idBrand) {
+//        this.idBrand = idBrand;
+//    }
 
     @Basic
     @Column(name = "NameModel")

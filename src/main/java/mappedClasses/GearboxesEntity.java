@@ -25,15 +25,15 @@ public class GearboxesEntity {
         this.idGearBox = idGearBox;
     }
 
-    @Basic
-    @Column(name = "IdGearBoxType")
-    public Integer getIdGearBoxType() {
-        return idGearBoxType;
-    }
-
-    public void setIdGearBoxType(Integer idGearBoxType) {
-        this.idGearBoxType = idGearBoxType;
-    }
+//    @Basic
+//    @Column(name = "IdGearBoxType")
+//    public Integer getIdGearBoxType() {
+//        return idGearBoxType;
+//    }
+//
+//    public void setIdGearBoxType(Integer idGearBoxType) {
+//        this.idGearBoxType = idGearBoxType;
+//    }
 
     @Basic
     @Column(name = "AmountOfGears")

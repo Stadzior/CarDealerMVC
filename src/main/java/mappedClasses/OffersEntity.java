@@ -51,35 +51,35 @@ public class OffersEntity {
         this.yearOfProduction = yearOfProduction;
     }
 
-    @Basic
-    @Column(name = "IdFuelType")
-    public Integer getIdFuelType() {
-        return idFuelType;
-    }
-
-    public void setIdFuelType(Integer idFuelType) {
-        this.idFuelType = idFuelType;
-    }
-
-    @Basic
-    @Column(name = "IdBrand")
-    public Integer getIdBrand() {
-        return idBrand;
-    }
-
-    public void setIdBrand(Integer idBrand) {
-        this.idBrand = idBrand;
-    }
-
-    @Basic
-    @Column(name = "IdState")
-    public Integer getIdState() {
-        return idState;
-    }
-
-    public void setIdState(Integer idState) {
-        this.idState = idState;
-    }
+//    @Basic
+//    @Column(name = "IdFuelType")
+//    public Integer getIdFuelType() {
+//        return idFuelType;
+//    }
+//
+//    public void setIdFuelType(Integer idFuelType) {
+//        this.idFuelType = idFuelType;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdBrand")
+//    public Integer getIdBrand() {
+//        return idBrand;
+//    }
+//
+//    public void setIdBrand(Integer idBrand) {
+//        this.idBrand = idBrand;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdState")
+//    public Integer getIdState() {
+//        return idState;
+//    }
+//
+//    public void setIdState(Integer idState) {
+//        this.idState = idState;
+//    }
 
     @Basic
     @Column(name = "DistanceDriven")

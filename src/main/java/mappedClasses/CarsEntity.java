@@ -33,25 +33,25 @@ public class CarsEntity {
         this.idCar = idCar;
     }
 
-    @Basic
-    @Column(name = "IdLogbook")
-    public int getIdLogbook() {
-        return idLogbook;
-    }
-
-    public void setIdLogbook(int idLogbook) {
-        this.idLogbook = idLogbook;
-    }
-
-    @Basic
-    @Column(name = "IdState")
-    public Integer getIdState() {
-        return idState;
-    }
-
-    public void setIdState(Integer idState) {
-        this.idState = idState;
-    }
+//    @Basic
+//    @Column(name = "IdLogbook")
+//    public int getIdLogbook() {
+//        return idLogbook;
+//    }
+//
+//    public void setIdLogbook(int idLogbook) {
+//        this.idLogbook = idLogbook;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdState")
+//    public Integer getIdState() {
+//        return idState;
+//    }
+//
+//    public void setIdState(Integer idState) {
+//        this.idState = idState;
+//    }
 
     @Basic
     @Column(name = "DistanceDriven")
@@ -93,15 +93,15 @@ public class CarsEntity {
         this.price = price;
     }
 
-    @Basic
-    @Column(name = "IdDriveType")
-    public Integer getIdDriveType() {
-        return idDriveType;
-    }
-
-    public void setIdDriveType(Integer idDriveType) {
-        this.idDriveType = idDriveType;
-    }
+//    @Basic
+//    @Column(name = "IdDriveType")
+//    public Integer getIdDriveType() {
+//        return idDriveType;
+//    }
+//
+//    public void setIdDriveType(Integer idDriveType) {
+//        this.idDriveType = idDriveType;
+//    }
 
     @Basic
     @Column(name = "Description")

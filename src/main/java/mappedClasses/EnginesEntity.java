@@ -27,15 +27,15 @@ public class EnginesEntity {
         this.idEngine = idEngine;
     }
 
-    @Basic
-    @Column(name = "IdFuelType")
-    public Integer getIdFuelType() {
-        return idFuelType;
-    }
-
-    public void setIdFuelType(Integer idFuelType) {
-        this.idFuelType = idFuelType;
-    }
+//    @Basic
+//    @Column(name = "IdFuelType")
+//    public Integer getIdFuelType() {
+//        return idFuelType;
+//    }
+//
+//    public void setIdFuelType(Integer idFuelType) {
+//        this.idFuelType = idFuelType;
+//    }
 
     @Basic
     @Column(name = "VolumeEngine")

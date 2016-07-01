@@ -85,75 +85,75 @@ public class LogbooksEntity {
         this.numberPlate = numberPlate;
     }
 
-    @Basic
-    @Column(name = "IdCarType")
-    public Integer getIdCarType() {
-        return idCarType;
-    }
+//    @Basic
+//    @Column(name = "IdCarType")
+//    public Integer getIdCarType() {
+//        return idCarType;
+//    }
+//
+//    public void setIdCarType(Integer idCarType) {
+//        this.idCarType = idCarType;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdModel")
+//    public Integer getIdModel() {
+//        return idModel;
+//    }
+//
+//    public void setIdModel(Integer idModel) {
+//        this.idModel = idModel;
+//    }
 
-    public void setIdCarType(Integer idCarType) {
-        this.idCarType = idCarType;
-    }
-
-    @Basic
-    @Column(name = "IdModel")
-    public Integer getIdModel() {
-        return idModel;
-    }
-
-    public void setIdModel(Integer idModel) {
-        this.idModel = idModel;
-    }
-
-    @Basic
-    @Column(name = "IdBodyColor")
-    public Integer getIdBodyColor() {
-        return idBodyColor;
-    }
-
-    public void setIdBodyColor(Integer idBodyColor) {
-        this.idBodyColor = idBodyColor;
-    }
-
-    @Basic
-    @Column(name = "IdBodyType")
-    public Integer getIdBodyType() {
-        return idBodyType;
-    }
-
-    public void setIdBodyType(Integer idBodyType) {
-        this.idBodyType = idBodyType;
-    }
-
-    @Basic
-    @Column(name = "IdEngine")
-    public Integer getIdEngine() {
-        return idEngine;
-    }
-
-    public void setIdEngine(Integer idEngine) {
-        this.idEngine = idEngine;
-    }
-
-    @Basic
-    @Column(name = "IdFuelType")
-    public Integer getIdFuelType() {
-        return idFuelType;
-    }
-
-    public void setIdFuelType(Integer idFuelType) {
-        this.idFuelType = idFuelType;
-    }
-
-    @Basic
-    @Column(name = "IdGearBox")
-    public Integer getIdGearBox() {
-        return idGearBox;
-    }
-
-    public void setIdGearBox(Integer idGearBox) {
-        this.idGearBox = idGearBox;
-    }
+//    @Basic
+//    @Column(name = "IdBodyColor")
+//    public Integer getIdBodyColor() {
+//        return idBodyColor;
+//    }
+//
+//    public void setIdBodyColor(Integer idBodyColor) {
+//        this.idBodyColor = idBodyColor;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdBodyType")
+//    public Integer getIdBodyType() {
+//        return idBodyType;
+//    }
+//
+//    public void setIdBodyType(Integer idBodyType) {
+//        this.idBodyType = idBodyType;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdEngine")
+//    public Integer getIdEngine() {
+//        return idEngine;
+//    }
+//
+//    public void setIdEngine(Integer idEngine) {
+//        this.idEngine = idEngine;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdFuelType")
+//    public Integer getIdFuelType() {
+//        return idFuelType;
+//    }
+//
+//    public void setIdFuelType(Integer idFuelType) {
+//        this.idFuelType = idFuelType;
+//    }
+//
+//    @Basic
+//    @Column(name = "IdGearBox")
+//    public Integer getIdGearBox() {
+//        return idGearBox;
+//    }
+//
+//    public void setIdGearBox(Integer idGearBox) {
+//        this.idGearBox = idGearBox;
+//    }
 
     @Basic
     @Column(name = "DateOfServicingExpiration")
