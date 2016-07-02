@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        '-//Hibernate/Hibernate Configuration DTD 3.0//EN'
+        'http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd'>
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name='connection.driver_class'>com.mysql.jdbc.Driver</property>
+        <property name='connection.url'>jdbc:mysql://localhost:3307/usedcarsdealer</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name='connection.pool_size'>1</property>
+
+        <!-- SQL dialect -->
+        <property name='dialect'>org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name='show_sql'>true</property>
+        <mapping class="mappedClasses.CarsEntity"/>
+        <mapping resource="mappedClasses/CarsEntity.hbm.xml"/>
+        <mapping resource="mappedClasses/DicbodycolorsEntity.hbm.xml"/>
+        <mapping class="mappedClasses.DicbodycolorsEntity"/>
+        <mapping resource="mappedClasses/DicbodytypesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.DicbodytypesEntity"/>
+        <mapping resource="mappedClasses/DicbrandsEntity.hbm.xml"/>
+        <mapping class="mappedClasses.DicbrandsEntity"/>
+        <mapping class="mappedClasses.DiccartypesEntity"/>
+        <mapping resource="mappedClasses/DiccartypesEntity.hbm.xml"/>
+        <mapping resource="mappedClasses/DicdrivetypesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.DicdrivetypesEntity"/>
+        <mapping class="mappedClasses.DicfueltypesEntity"/>
+        <mapping resource="mappedClasses/DicfueltypesEntity.hbm.xml"/>
+        <mapping resource="mappedClasses/DicgearboxtypesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.DicgearboxtypesEntity"/>
+        <mapping class="mappedClasses.DicstatesEntity"/>
+        <mapping resource="mappedClasses/DicstatesEntity.hbm.xml"/>
+        <mapping resource="mappedClasses/EnginesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.EnginesEntity"/>
+        <mapping resource="mappedClasses/FilesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.FilesEntity"/>
+        <mapping resource="mappedClasses/GearboxesEntity.hbm.xml"/>
+        <mapping class="mappedClasses.GearboxesEntity"/>
+        <mapping resource="mappedClasses/LogbooksEntity.hbm.xml"/>
+        <mapping class="mappedClasses.LogbooksEntity"/>
+        <mapping resource="mappedClasses/LogsEntity.hbm.xml"/>
+        <mapping class="mappedClasses.LogsEntity"/>
+        <mapping resource="mappedClasses/ModelsEntity.hbm.xml"/>
+        <mapping class="mappedClasses.ModelsEntity"/>
+        <mapping class="mappedClasses.OffersEntity"/>
+        <mapping resource="mappedClasses/OffersEntity.hbm.xml"/>
+
+        <!-- Mapping files -->
+        <!--<mapping resource='Author.hbm.xml'/>-->
+    </session-factory>
+</hibernate-configuration>

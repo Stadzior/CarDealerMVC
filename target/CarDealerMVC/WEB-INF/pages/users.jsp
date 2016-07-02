@@ -67,6 +67,31 @@
                     </tbody>
                 </table>
             </c:if>
+            <c:if test="${!empty users}">
+                <h3>Cars</h3>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Brand</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${users}" var="car">
+                        <tr>
+                            <td>${user.lastName}, ${user.firstName}</td>
+                            <td>${user.email}</td>
+                            <td>
+                                <form action="delete/${user.id}" method="post"><input type="submit"
+                                                                                      class="btn btn-danger btn-mini"
+                                                                                      value="Delete"/></form>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </c:if>
         </div>
     </div>
 </div>
