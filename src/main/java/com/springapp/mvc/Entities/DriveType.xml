@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.springapp.mvc.Entities.DicdrivetypesEntity" table="dicdrivetypes" schema="" catalog="usedcarsdealer">
+        <id name="idDriveType" column="IdDriveType"/>
+        <property name="nameDriveType" column="NameDriveType"/>
+        <set name="carsesByIdDriveType" inverse="true">
+            <key>
+                <column name="IdDriveType"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.springapp.mvc.Entities.CarsEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

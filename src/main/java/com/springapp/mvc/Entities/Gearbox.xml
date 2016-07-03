@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.springapp.mvc.Entities.GearboxesEntity" table="gearboxes" schema="" catalog="usedcarsdealer">
+        <id name="idGearBox" column="IdGearBox"/>
+        <property name="idGearBoxType" column="IdGearBoxType"/>
+        <property name="amountOfGears" column="AmountOfGears"/>
+        <many-to-one name="dicgearboxtypesByIdGearBoxType" class="com.springapp.mvc.Entities.DicgearboxtypesEntity">
+            <column name="IdGearBoxType"/>
+        </many-to-one>
+        <set name="logbooksesByIdGearBox" inverse="true">
+            <key>
+                <column name="IdGearBox"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.springapp.mvc.Entities.LogbooksEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>

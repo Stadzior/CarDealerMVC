@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.springapp.mvc.Entities.LogsEntity" table="logs" schema="" catalog="usedcarsdealer">
+        <id name="idLog" column="IdLog"/>
+        <property name="userName" column="UserName"/>
+        <property name="tableName" column="TableName"/>
+        <property name="columnName" column="ColumnName"/>
+        <property name="actionType" column="ActionType"/>
+        <property name="idEntity" column="IdEntity"/>
+        <property name="oldValue" column="OldValue"/>
+        <property name="newValue" column="NewValue"/>
+        <property name="tmStmp" column="TmStmp"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.springapp.mvc.Entities.ModelsEntity" table="models" schema="" catalog="usedcarsdealer">
+        <id name="idModel" column="IdModel"/>
+        <property name="idBrand" column="IdBrand"/>
+        <property name="nameModel" column="NameModel"/>
+        <many-to-one name="dicbrandsByIdBrand" class="com.springapp.mvc.Entities.DicbrandsEntity">
+            <column name="IdBrand"/>
+        </many-to-one>
+        <set name="logbooksesByIdModel" inverse="true">
+            <key>
+                <column name="IdModel"/>
+            </key>
+            <one-to-many not-found="ignore" class="com.springapp.mvc.Entities.LogbooksEntity"/>
+        </set>
+    </class>
+</hibernate-mapping>
